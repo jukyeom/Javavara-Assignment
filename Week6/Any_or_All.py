@@ -1,3 +1,3 @@
-n = int(input())
-num_list = list(map(int, input().split()))
-all(for i in range(0, len(num_list)+1 : num_list[i] > 0))
+N = ' '.join(input()).split()
+int_list = list(map(int, input().split()))
+print(all(int_list[i] > 0 for i in range(len(int_list))) and N == N[::-1])

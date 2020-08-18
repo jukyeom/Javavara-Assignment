@@ -1,2 +1,6 @@
-N = list(map(int, input("N과 X를 입력하세요. ").split()))[0]
-X = list(map(int, input("N과 X를 입력하세요. ").split()))[1]
+N, X = map(int, input().split())
+score = []
+for i in range(X):
+    score.append(list(map(float, input().split())))
+for student in list(zip(*score)):
+    print(sum(student) / len(student))
